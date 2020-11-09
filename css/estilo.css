@@ -1,0 +1,14 @@
+/*
+* 
+* @author Jamilton Damasceno
+*/
+
+/*---------------------Layout--------------------*/
+
+body{
+    background: url(../imagens/capa.png),/*imagem de foto*/
+                url(../imagens/ruido.png),/*imagem com efeito*/
+                linear-gradient(50deg,#ff4169,#7c26f8);/*efeito de cores*/
+
+    background-attachment: fixed;/*Efeito que mantém o fundo parado enquanto o conteúdo se movimenta*/
+}
