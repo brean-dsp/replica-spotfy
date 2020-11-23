@@ -26,22 +26,19 @@
     <!-- Início do cabeçalho -->
     <header> 
       <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente"><!-- Inicio barra de navegção superior -->
-
-        <!-- Div que contém o logo e os links da barra de navegação -->
-        <div class="container">
-
-          <!-- Logo -->
+     
+        <div class="container"><!-- Div que contém o logo e os links da barra de navegação -->
+    
             <a href="index.html" class="navbar-brand">
               <img src="imagens/spotify.svg" width="142px">
-            </a>
+            </a><!-- Logo -->
 
-            <!-- Menu de barras responsivo -->
+            
             <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal"> 
               <i class="fas fa-bars text-white"></i>
-            </button>
-
-            <!-- Links da barra de navegação -->
-            <div class="collpase navbar-collapse" id="nav-principal">
+            </button><!-- Menu de barras responsivo -->
+          
+            <div class="collpase navbar-collapse" id="nav-principal">  <!-- Links da barra de navegação -->
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a href="" class="nav-link">Premium</a>
@@ -68,24 +65,46 @@
 
       </nav><!-- Fim da barra de navegção superior -->
 
-    </header>
-    <!-- Fim do cabeçalho -->
+    </header><!-- Fim do cabeçalho -->
 
     <section id="home" class="d-flex"> <!-- Abrindo section -->
       <div class="container align-self-center"><!-- Abrindo container -->
         <div class="row"><!-- Abrindo row -->
           <div class="col-md-12 capa">
 
-            <h1>Música para todos</h1>
-            <a href="" class="btn btn-custom btn-roxo">
-              Aproveite o Spotfy free
-            </a>
+            <div id="carousel-spotfy" class="carousel slide" data-ride="carousel"><!--Abertura div carousel-->
 
-            <a href="" class="btn btn-custom btn-branco">
-              Obter o Spotfy Premium
-            </a>
+              <div class="carousel-inner"><!-- abertura Inner-->
+
+                <div class="carousel-item active"><!-- Abertura Slide 1-->
+                  <h1>Música para todos</h1>
+                  <a href="" class="btn btn-lg btn-custom btn-roxo">
+                    Aproveite o Spotfy Free
+                  </a>
+                  <a href="" class="btn btn-lg btn-custom btn-branco">
+                    Obter o Spotfy Premium
+                  </a>
+                </div><!-- Fechando Slide 1-->
+
+                <div class="carousel-item"><!-- Abertura Slide 2-->
+                  <h1>As melhores rádios</h1>
+                  <a href="" class="btn btn-lg btn-custom btn-branco">
+                    <i class="fas fa-music"></i> Ouça agora
+                  </a>
+                </div><!-- Fechando Slide 2-->
+              </div><!-- fechando Inner-->
+            </div><!--fechando div carousel-->
 
           </div>
+
+          <!-- Controles do Slide-->
+          <a href="#carousel-spotfy" class="carousel-control-prev" data-slide="prev">
+            <i class="fas fa-angle-left fa-3x"></i>
+          </a>
+
+          <a href="#carousel-spotfy" class="carousel-control-next" data-slide="next">
+            <i class="fas fa-angle-right fa-3x"></i>
+          </a>
         </div><!-- Fechando row -->
       </div><!-- Fechando Container -->
     </section><!-- Fechando section -->
